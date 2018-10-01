@@ -137,7 +137,18 @@ namespace dia1
             Console.WriteLine("Eso son " + metroSegundo + " m/s, o " + kmHora + " km/h");*/
 
 
-            Console.WriteLine("Escribe dos números.");
+
+
+            Random rnd = new Random();
+            int aleatorio100 = rnd.Next(0,100);
+            Console.WriteLine("Tú número aleatorio es "+aleatorio100);
+
+
+
+
+            Console.ReadKey();
+            
+            /*Console.WriteLine("Escribe dos números.");
             double num1 = Double.Parse(Console.ReadLine()), num2 = Double.Parse(Console.ReadLine());
             Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
             Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
@@ -145,11 +156,11 @@ namespace dia1
             Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
             Console.WriteLine("La media de " + num1 + " y " + num2 + " es " + (num1 + num2) / 2);
             Console.WriteLine("El número más alto es ");
-            Console.WriteLine("El número más bajo es ");
+            Console.WriteLine("El número más bajo es ");*/
 
 
 
-            Console.ReadKey();
+            
         }
     }
 }
