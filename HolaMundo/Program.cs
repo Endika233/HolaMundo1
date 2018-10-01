@@ -11,7 +11,12 @@ namespace HolaMundo
         static void Main(string[] args)
         {
             Console.WriteLine("Hola Mundo");
-            Console.WriteLine();
+            int num1 = 2;
+            Console.WriteLine(num1 += 2);
+
+
+
+           
             Console.ReadKey();
         }
     }
