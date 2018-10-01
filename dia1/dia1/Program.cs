@@ -139,8 +139,10 @@ namespace dia1
 
 
 
-            Random rnd = new Random();
-            int aleatorio100 = rnd.Next(0,100);
+            Random rnd = new Random();//Creamos una "variable" random y =new Random(), hace que varíe segun el tiempo
+            int aleatorio100 = rnd.Next();/*Al valor random rnd con Next(0,100), fijamos el intervalo de num aleatorio
+            Si solo pusieramos 100, lo calcularía de 0 a 100 y sin nada supongo
+            que un valor en el limite de int, pero positivo*/
             Console.WriteLine("Tú número aleatorio es "+aleatorio100);
 
 
