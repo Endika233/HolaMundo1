@@ -139,30 +139,40 @@ namespace dia1
 
 
 
-            Random rnd = new Random();//Creamos una "variable" random y =new Random(), hace que varíe segun el tiempo
-            int aleatorio100 = rnd.Next();/*Al valor random rnd con Next(0,100), fijamos el intervalo de num aleatorio
-            Si solo pusieramos 100, lo calcularía de 0 a 100 y sin nada supongo
-            que un valor en el limite de int, pero positivo*/
-            Console.WriteLine("Tú número aleatorio es "+aleatorio100);
+            //Random rnd = new Random();//Creamos una "variable" random y =new Random(), hace que varíe segun el tiempo
+            //int aleatorio100 = rnd.Next(100);/*Al valor random rnd con Next(0,100), fijamos el intervalo de num aleatorio
+            //Si solo pusieramos 100, lo calcularía de 0 a 100 y sin nada supongo
+            //que un valor en el limite de int, pero positivo*/
+            //Console.WriteLine("Tú número aleatorio es "+aleatorio100);
 
 
 
-
-            Console.ReadKey();
-            
-            /*Console.WriteLine("Escribe dos números.");
+            Console.WriteLine("Escribe dos números.");
             double num1 = Double.Parse(Console.ReadLine()), num2 = Double.Parse(Console.ReadLine());
             Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
             Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
             Console.WriteLine(num1 + " x " + num2 + " = " + (num1 * num2));
             Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
             Console.WriteLine("La media de " + num1 + " y " + num2 + " es " + (num1 + num2) / 2);
-            Console.WriteLine("El número más alto es ");
-            Console.WriteLine("El número más bajo es ");*/
-
-
-
+            if (num1 > num2)
+            {
+                Console.WriteLine("El número más alto es "+num1);
+                Console.WriteLine("Y el más bajo es " + num2);
+            }
+            if (num2 > num1)
+            {
+                Console.WriteLine("El número más alto es "+num2);
+                Console.WriteLine("Y el mas bajo es " + num1);
+            }
             
+           
+
+
+
+            Console.ReadKey();
+
+
+
         }
     }
 }
